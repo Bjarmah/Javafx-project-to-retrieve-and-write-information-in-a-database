@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import java.sql.*;
 
 import java.io.IOException;
 
@@ -41,6 +42,11 @@ public class DBUtils {
      stage.setResizable(false);
      stage.setTitle("ABC");
      stage.show();
+ }
+
+ static void SignUpUser(ActionEvent event, String Username, String Password, String Salary){
+     Connection connection = null;
+     PreparedStatement preparedStatement = null;
  }
 
 }
